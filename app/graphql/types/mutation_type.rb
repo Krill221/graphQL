@@ -1,12 +1,8 @@
-module Types
-  class MutationType < Types::BaseObject
+Types::MutationType = GraphQL::ObjectType.define do
+  name 'Mutation'
 
-    field :createLink, function: Resolvers::CreateLink.new
+  field :createLink, function: Resolvers::CreateLink.new
+  field :createUser, function: Resolvers::CreateUser.new
+  field :signinUser, function: Resolvers::SigninUser.new
 
-    field :test_field, String, null: false,
-      description: "An example field added by the generator"
-    def test_field
-      "Hello World"
-    end
-  end
 end
