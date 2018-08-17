@@ -58,3 +58,7 @@ gem "graphql", "~> 1.8"
 
 gem 'graphiql-rails', group: :development
 gem "bcrypt", "~> 3.1"
+
+gem "search_object", "~> 1.2"
+
+gem "search_object_graphql", "~> 0.1"
